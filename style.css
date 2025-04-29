@@ -1,5 +1,36 @@
+html {
+  font-family: "Inter", sans-serif;
+}
 body {
   margin: 0;
   display: flex;
   background: black;
+}
+
+#toolbar {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+#title {
+  background: yellow;
+}
+
+#title p {
+  margin: -3px 0px;
+  font-size: 20px;
+}
+
+#title p:nth-child(2) {
+  margin-top: -6px;
+  color: #4a4a4a;
+}
+
+#mute-toggle {
+  background: yellow;
+  border: none;
 }

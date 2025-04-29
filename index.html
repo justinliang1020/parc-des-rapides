@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
@@ -16,5 +22,31 @@
     <video width="480" autoplay muted loop>
       <source src="assets/lake.mp4" type="video/mp4" />
     </video>
+    <audio
+      id="myAudio"
+      src="assets/ambient.m4a"
+      type="audio/m4a"
+      autoplay
+      muted
+      loop
+    ></audio>
+    <div id="toolbar">
+      <div id="title">
+        <p>PARC DES RAPIDES, LASALLE, QUEBEC</p>
+        <p>RAPIDS PARK</p>
+      </div>
+      <button
+        id="mute-toggle"
+        style="top: 100px; left: 300px"
+        onclick="
+  const audio = document.getElementById('myAudio');
+  if (audio.paused) audio.play();  // Ensure playback starts
+  audio.muted = !audio.muted;
+  this.textContent = audio.muted ? 'Unmute' : 'Mute';
+"
+      >
+        Unmute
+      </button>
+    </div>
   </body>
 </html>
