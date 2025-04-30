@@ -61,3 +61,19 @@ body {
 #hyperimage:focus {
   background-color: hsl(0deg 0% 0% / 30%);
 }
+
+@keyframes flash-blue {
+  0% {
+    background-color: hsl(204deg 100% 69% / 60%);
+    border-color: hsl(204deg 100% 50%);
+  }
+
+  100% {
+    background-color: hsl(0deg 0% 0% / 30%);
+    border-color: none;
+  }
+}
+
+#hyperimage.highlight-clickable {
+  animation: flash-blue 2s cubic-bezier(0.22, 1, 0.36, 1);
+}
