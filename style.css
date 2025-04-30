@@ -54,14 +54,14 @@ body {
 
 #hyperimage {
   position: absolute;
-  background-color: hsl(0deg 0% 0% / 20%);
+  background-color: hsl(0deg 0% 0% / 10%);
   border-width: 10px;
   border-style: solid;
   border-color: transparent;
 }
 
 #hyperimage:hover,
-#hyperimage:focus {
+#hyperimage:focus-visible {
   background-color: hsl(0deg 0% 0% / 70%);
 }
 
