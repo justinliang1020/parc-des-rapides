@@ -14,6 +14,6 @@ function handleBodyClick(event) {
     // Remove highlight class after brief moment
     setTimeout(() => {
       hyperimages.forEach((h) => h.classList.remove("highlight-clickable"));
-    }, 2000);
+    }, 1000);
   }
 }

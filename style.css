@@ -55,25 +55,26 @@ body {
 #hyperimage {
   position: absolute;
   background-color: hsl(0deg 0% 0% / 20%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent;
 }
 
 #hyperimage:hover,
 #hyperimage:focus {
-  background-color: hsl(0deg 0% 0% / 30%);
+  background-color: hsl(0deg 0% 0% / 70%);
 }
 
 @keyframes flash-blue {
   0% {
-    background-color: hsl(204deg 100% 69% / 60%);
-    border-color: hsl(204deg 100% 50%);
+    border-color: lightskyblue;
   }
 
   100% {
-    background-color: hsl(0deg 0% 0% / 30%);
     border-color: none;
   }
 }
 
 #hyperimage.highlight-clickable {
-  animation: flash-blue 2s cubic-bezier(0.22, 1, 0.36, 1);
+  animation: flash-blue 1.5s cubic-bezier(0.22, 1, 0.36, 1);
 }
