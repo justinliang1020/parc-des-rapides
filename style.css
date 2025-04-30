@@ -25,12 +25,29 @@ body {
   font-size: 20px;
 }
 
+#title p a {
+  color: black;
+  text-decoration: none;
+}
+
+#title p a:hover {
+  background-color: blue;
+}
+
 #title p:nth-child(2) {
   margin-top: -6px;
+  color: #4a4a4a;
+}
+
+#title p:nth-child(2) a {
   color: #4a4a4a;
 }
 
 #mute-toggle {
   background: yellow;
   border: none;
+}
+
+#mute-toggle:hover {
+  background-color: blue;
 }

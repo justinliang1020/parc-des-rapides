@@ -32,8 +32,22 @@
     ></audio>
     <div id="toolbar">
       <div id="title">
-        <p>PARC DES RAPIDES, LASALLE, QUEBEC</p>
-        <p>RAPIDS PARK</p>
+        <p>
+          <a
+            href="https://fr.wikipedia.org/wiki/Parc_des_Rapides_(Montr%C3%A9al)"
+            target="_blank"
+          >
+            PARC DES RAPIDES, LASALLE, QUEBEC
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://en.wikipedia.org/wiki/Des_Rapides_Park"
+            target="_blank"
+          >
+            RAPIDS PARK
+          </a>
+        </p>
       </div>
       <button
         id="mute-toggle"
@@ -42,10 +56,10 @@
   const audio = document.getElementById('myAudio');
   if (audio.paused) audio.play();  // Ensure playback starts
   audio.muted = !audio.muted;
-  this.textContent = audio.muted ? 'Unmute' : 'Mute';
+  this.textContent = audio.muted ? '🔇' : '🔈';
 "
       >
-        Unmute
+        🔇
       </button>
     </div>
   </body>
