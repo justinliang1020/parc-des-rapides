@@ -51,3 +51,13 @@ body {
 #mute-toggle:hover {
   background-color: blue;
 }
+
+#hyperimage {
+  position: absolute;
+  background-color: hsl(0deg 0% 0% / 20%);
+}
+
+#hyperimage:hover,
+#hyperimage:focus {
+  background-color: hsl(0deg 0% 0% / 30%);
+}
